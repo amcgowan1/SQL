@@ -1,0 +1,37 @@
+--Create a grocery store database
+
+
+CREATE TABLE Awesome_Clothing (ID INTEGER PRIMARY KEY, Name TEXT, Size TEXT, Price INTEGER, Color TEXT);
+
+
+INSERT INTO Awesome_Clothing VALUES 
+(1, "T-shirt", "Large", 6.00, "black"),
+(2, "Vneck", "MEDIUM", 17.00, "blue"),
+(3, "Crew", "Large", 4.00, "white"),
+(4, "SlimFit", "SMALL", 8.00, "black & white"),
+(5, "Boot Cut", "MEDIUM", 29.00, "wash blue"),
+(6, "Shorts", "Large", 7.00, "black"),
+(7, "Low Rise", "Large", 31.00, "blue"),
+(8, "Short Sleeve", "Large", 11.00, "purple"),
+(9, "Socks", "medium", 12.00, "black"),
+(10, "Gloves", "Large", 9.00, "red"),
+(11, "Belt", "Large", 11.00, "brown"),
+(12, "Shoes", "Large", 22.00, "green"),
+(13, "Backpack", "small", 13.00, "black"),
+(14, "Fitted Hat", "medium", 31.50, "grey"),
+(15, "Necklaces", "Large", 110.00, "silver");
+
+
+--display the database ordered by price. 
+
+SELECT Price FROM Awesome_CLothing Where price ORDER BY Price desc;
+
+
+--what is the Max price of items in the Awesome_clothing section? 
+
+Select Max(Price) as Most_Dollar_paid From Awesome_Clothing;
+
+
+--show all data inserted into table
+
+SELECT * FROM Awesome_Clothing;
